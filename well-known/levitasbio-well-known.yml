@@ -1,0 +1,53 @@
+generated: '2026-08-25'
+method: probed
+source: live HTTPS probes of every LevitasBio host known to this profile
+note: >-
+  Every /.well-known/ path was probed on both LevitasBio hosts and none returned a real
+  document. levitasbio.com is a WordPress site that answers unknown paths with a 404 HTML
+  page, and answers /.well-known/oauth-authorization-server with an HTTP 202 whose body is
+  the same "404 - Not found" HTML shell — a soft-404, recorded here as a miss, not a hit.
+  support.levitasbio.com is a vanity host that 301s to levitasbio.com/support/ and 403s every
+  other path. NO WellKnown or SecurityTxt pointer is emitted in apis.yml, because nothing was
+  served.
+hosts:
+- host: levitasbio.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+    note: soft-404 — HTTP 202 with an HTML "404 - Not found" body, not a document
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: support.levitasbio.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null

@@ -1,8 +1,21 @@
 aid: levitasbio
 name: LevitasBio
-description: 'LevitasBio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  LevitasBio is a Menlo Park, California life-science instrumentation company, founded in 2017,
+  that commercializes magnetic levitation technology developed at Stanford and Harvard for
+  label-free separation and characterization of living cells. Its LeviCell family of benchtop
+  instruments (LeviCell 1.0, LeviCell Access 1.0, LeviCell EOS and the high-throughput LeviCell 96)
+  suspends cells in three-dimensional space and separates viable cells from dead cells and debris
+  without antibodies, beads or other labels. The platform is surrounded by LeviPrep tissue
+  dissociation and nuclei extraction kits, the Nuvo automated tissue prep system, LeviSelect
+  untouched depletion kits (tissue RBC, immune cell, mouse myelin, cell debris) and LeviMetrics,
+  an AI-based analysis software layer that reads bright-field and fluorescence imagery captured
+  during a run to characterize the sample. Customers use the platform for viable cell enrichment,
+  single-cell genomics, cancer profiling and 3D culture/organoid workflows. LevitasBio sells
+  instruments and consumables through a direct and distributor channel and, as of this profiling
+  pass, publishes no public developer program, API, SDK or machine-readable interface contract.
 url: https://raw.githubusercontent.com/api-evangelist/levitasbio/refs/heads/main/apis.yml
+image: https://levitasbio.com/wp-content/uploads/2024/01/Levitas-Fallback-for-Social-Share-Images.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +25,13 @@ created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Life Sciences
+- Biotechnology
+- Laboratory Instruments
+- Cell Separation
+- Single Cell Genomics
+- Scientific Software
+- Research Tools
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +40,49 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://levitasbio.com/
+- type: Blog
+  url: https://levitasbio.com/blog/
+- type: Support
+  url: https://levitasbio.com/support/
+- type: PrivacyPolicy
+  url: https://levitasbio.com/privacy-policy/
+- type: TermsOfService
+  url: https://levitasbio.com/terms-of-use/
+- type: LLMsTxt
+  url: llms/levitasbio-llms.txt
+- type: DomainSecurity
+  url: security/levitasbio-domain-security.yml
+- type: Plans
+  url: plans/levitasbio-plans-pricing.yml
+- type: Packages
+  url: packages/levitasbio-packages.yml
+
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    LevitasBio is a benchtop cell-separation instrument maker whose only software, LeviMetrics,
+    ships on the LeviCell EOS itself; the whole levitasbio.com WordPress site has no developer,
+    API, docs or portal page in its sitemap, api./developer./docs.levitasbio.com do not resolve,
+    and every contract probe (openapi.json, llms.txt, graphql, MCP, agent card, /.well-known/*)
+    returned 404 on the only host that exists.
+  evidence:
+    - url: https://levitasbio.com/openapi.json
+      status: 404
+    - url: https://levitasbio.com/llms.txt
+      status: 404
+    - url: https://levitasbio.com/.well-known/api-catalog
+      status: 404
+    - url: https://levitasbio.com/.well-known/agent-card.json
+      status: 404
+    - url: https://levitasbio.com/page-sitemap.xml
+      status: 200
+    - url: https://api.github.com/search/users?q=levitasbio
+      status: 200
+  checked: '2026-08-25'

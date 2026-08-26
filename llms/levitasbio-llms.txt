@@ -1,0 +1,64 @@
+# LevitasBio
+
+> LevitasBio is a Menlo Park, California life-science instrumentation company (founded 2017) that
+> commercializes magnetic levitation technology from Stanford and Harvard for label-free separation
+> and characterization of living cells. It sells benchtop instruments, sample-prep and depletion
+> kits, and an on-instrument AI analysis application. It publishes NO public API, SDK, webhook
+> surface or machine-readable interface contract.
+
+Generated: 2026-08-25
+method: generated
+Source: apis.yml + probed public pages at https://levitasbio.com/ (this file is written by API
+Evangelist, not published by LevitasBio)
+
+## Agent-facing summary
+
+- There is no LevitasBio developer portal, API reference, OpenAPI/AsyncAPI/GraphQL contract,
+  MCP server, A2A agent card, or `/.well-known/` document. All of these were probed on
+  2026-08-25 and none exist.
+- `levitasbio.com` is a WordPress site. Its CMS-level `/wp-json/` REST endpoint answers 200,
+  but that is WordPress core content plumbing, not a LevitasBio product API, and it is
+  deliberately NOT catalogued as a LevitasBio API.
+- Commercial motion is quote-based. Instruments and consumables are bought through a quote form
+  or a regional distributor; there is no self-serve signup and no published price list.
+
+## Products
+
+- LeviCell 1.0 — https://levitasbio.com/levicell-1-0/
+- LeviCell Access 1.0 — https://levitasbio.com/levicell-1-0-access-system/
+- LeviCell EOS — https://levitasbio.com/levicell-eos/
+- LeviCell 96 (high-throughput) — https://levitasbio.com/levicell-96/
+- LeviPrep sample preparation, Nuvo automated tissue prep, nuclei kits — https://levitasbio.com/leviprep/
+- LeviSelect untouched depletion kits (tissue RBC, immune cell, mouse myelin, cell debris) — https://levitasbio.com/leviselect/
+- LeviMetrics AI analysis software — https://levitasbio.com/levimetrics/
+- Levitation Technology overview — https://levitasbio.com/levitation-technology/
+
+## Applications
+
+- Viable cell enrichment — https://levitasbio.com/viable-cell-enrichment/
+- Single cell genomics — https://levitasbio.com/single-cell-genomics/
+- Flow cytometry — https://levitasbio.com/flow-cytometry/
+- 3D cultures and organoid sorting — https://levitasbio.com/3d-cultures/
+
+## Company and resources
+
+- Website — https://levitasbio.com/
+- About — https://levitasbio.com/about-us/
+- Blog — https://levitasbio.com/blog/
+- Newsroom — https://levitasbio.com/newsroom/
+- Publications — https://levitasbio.com/publications/
+- Documents (product literature) — https://levitasbio.com/documents/
+- Support — https://levitasbio.com/support/
+- Distributors — https://levitasbio.com/distributors/
+- Request a quote — https://levitasbio.com/request-a-quote/
+- Contact — https://levitasbio.com/contact/
+- Privacy policy — https://levitasbio.com/privacy-policy/
+- Terms of use — https://levitasbio.com/terms-of-use/
+
+## API Evangelist artifacts (written by API Evangelist, not by LevitasBio)
+
+- security/levitasbio-domain-security.yml — probed TLS/DNS posture (TLS 1.3, CAA set, SPF + DMARC
+  present at p=none, no HSTS, no DNSSEC)
+- well-known/levitasbio-well-known.yml — recorded absence of every /.well-known/ document
+- packages/levitasbio-packages.yml — recorded absence of any first-party client library
+- plans/levitasbio-plans-pricing.yml — recorded absence of published pricing (quote-only)

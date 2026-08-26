@@ -1,0 +1,19 @@
+generated: '2026-08-25'
+method: searched
+source: https://levitasbio.com/request-a-quote/
+note: >-
+  LevitasBio publishes no price list and no plan tiers. It sells capital instruments
+  (LeviCell 1.0, LeviCell Access 1.0, LeviCell EOS, LeviCell 96), the Nuvo automated tissue prep
+  system, and consumable kits (LeviPrep, LeviSelect) through a quote-and-distributor motion:
+  every product page routes to a "Request a Quote" form, and regional distributors are listed
+  for Asia Pacific, EMEA and North America. There is no self-serve signup, no metered API, and
+  therefore no plan or usage pricing to record. plan_count: 0 is the honest measurement, not a
+  gap in this profile.
+currency: null
+plan_count: 0
+plans: []
+evidence:
+- url: https://levitasbio.com/request-a-quote/
+  status: 200
+- url: https://levitasbio.com/distributors/
+  status: 200

@@ -1,0 +1,46 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  npm registry search, PyPI, RubyGems, crates.io and a GitHub user/org + repository search for
+  "levitasbio" / "levicell"; plus the LevitasBio website navigation and Documents page.
+note: >-
+  No first-party LevitasBio client library exists in any public package registry, and the
+  company has no GitHub organization. LeviMetrics — the AI analysis layer for the LeviCell EOS
+  — is distributed as on-instrument/desktop software, not as an installable SDK, so there is no
+  registry metadata endpoint to read a version or release date from. No SDKs pointer is emitted
+  in apis.yml because there is no SDK.
+package_count: 0
+packages: []
+registries_checked:
+- registry: npm
+  query: https://registry.npmjs.org/-/v1/search?text=levitasbio
+  status: 200
+  results: 0
+- registry: npm
+  query: https://registry.npmjs.org/-/v1/search?text=levicell
+  status: 200
+  results: 0
+- registry: pypi
+  query: https://pypi.org/pypi/levitasbio/json
+  status: 404
+  results: 0
+- registry: pypi
+  query: https://pypi.org/pypi/levicell/json
+  status: 404
+  results: 0
+- registry: pypi
+  query: https://pypi.org/pypi/levimetrics/json
+  status: 404
+  results: 0
+- registry: rubygems
+  query: https://rubygems.org/api/v1/gems/levitasbio.json
+  status: 404
+  results: 0
+- registry: github
+  query: https://api.github.com/search/users?q=levitasbio
+  status: 200
+  results: 0
+- registry: github
+  query: https://api.github.com/search/repositories?q=levitasbio+OR+levicell
+  status: 200
+  results: 0
