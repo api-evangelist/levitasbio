@@ -15,6 +15,17 @@ description: >-
   instruments and consumables through a direct and distributor channel and, as of this profiling
   pass, publishes no public developer program, API, SDK or machine-readable interface contract.
 url: https://raw.githubusercontent.com/api-evangelist/levitasbio/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://levitasbio.com/wp-content/uploads/2024/01/Levitas-Fallback-for-Social-Share-Images.png
 x-type: company
 x-source: harvest:secondary-market
