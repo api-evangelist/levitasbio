@@ -3,26 +3,26 @@
   "feeds": [
     {
       "source": "https://levitasbio.com/",
-      "feed_url": "https://levitasbio.com/",
+      "feed_url": "https://levitasbio.com/blog/feed/",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "discovered"
     },
     {
       "source": "https://levitasbio.com/blog/feed/",
       "feed_url": "https://levitasbio.com/blog/feed/",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "feed"
     },
     {
       "source": "https://levitasbio.com/feed/",
       "feed_url": "https://levitasbio.com/feed/",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "feed"
     }
   ],
   "post_count": 10,
-  "fetched": "2026-09-13T13:00:00Z"
+  "fetched": "2026-09-19T20:17:39Z"
 }
